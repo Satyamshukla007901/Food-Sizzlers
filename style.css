@@ -1,0 +1,203 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position:relative;
+    opacity:transparent;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  .pimg2{
+    background-image:url('bg10.jpg');
+    min-height:400px;
+  }
+  .pimg3{
+    background-image:url('bgn2.jpg');
+    min-height:400px;
+  }
+  .pimg4{
+    background-image:url('co.jpg');
+    min-height:400px;
+  }
+  .section-dark{
+    background-image: url('div1.jpg');
+    color: white;
+    opacity: transparent;
+    font-size: 20px;
+  }
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column , .column1{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row {
+    display: flex;
+  }
+  
+  .column,.column1 {
+    flex: 33.33%;
+    
+    padding: 5px;
+  }
+  .column1:hover{
+    box-shadow: 2px 2px white;
+    flex: 40%;
+    flex-direction: column;
+  }
+.section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  .pimg1{
+    background-image:url('BGHOME.jpg');
+    min-height:100%;
+  }
+  .ptext{
+    position:absolute;
+    font-family: 'Great Vibes', cursive;
+
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:85px;
+    font-weight: bold;
+    letter-spacing:2px;
+    
+  }
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3, .pimg4{
+      background-attachment:scroll;
+    }
+  }
+  .ptext .border{
+    
+    color: white;
+    text-shadow: white;
+    padding:20px;
+  }
+  
+  .ptext1{
+    position:absolute;
+    font-family: 'Great Vibes', cursive;
+
+    top:50%;
+    width:100%;
+    text-align:center;
+    font-size:150px;
+    letter-spacing:2px;
+    color: black;
+    
+    text-shadow: white;
+    padding:20px;
+    background-color: transparent;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+  
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }  
+  .topnav {
+    overflow: hidden;
+    background-color: #000;
+  }
+  .section-light{
+    background-image: url('div1.jpg');
+    color: white;
+    opacity: transparent;
+    font-size: 20px;
+  }
+  .header{
+      font-size: 80px;
+      font-family: 'Great Vibes',cursive;
+      letter-spacing: 4px;
+      color: white;
+  }
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Markazi Text';
+    letter-spacing: 3px;
+  }
+  .matter{
+      font-size:  28px;
+      font-weight: bold;
+      font-family: 'Gruppo';
+      color: wheat;
+  }
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  .form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-left: 100px;
+  }
+  .form-inline input {
+    vertical-align: middle;
+    margin: 10px 10px 10px 5px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+  }
+  .form-inline button:hover {
+    background-color: rgb(33, 34, 36);
+  }
+  .form-inline label {
+    margin: 20px 20px 10px 0;
+    font-family: 'Great Vibes';
+    font-size: 50px;
+  }
+  .ppl{
+    vertical-align: middle;
+    margin: 10px 10px 10px 5px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+      color: white;
+  }
+  /* Style the submit button */
+.form-inline button {
+    margin-left: 100px;
+    padding: 10px 40px;
+    background-color: rgb(17, 17, 17);
+    border: 3px solid rgb(245, 239, 239);
+    color: rgb(250, 246, 246);
+    font-family: 'Great Vibes';
+    font-size: 30px;
+  }
